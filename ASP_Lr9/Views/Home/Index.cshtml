@@ -1,0 +1,21 @@
+﻿@model IEnumerable<ASP_Lr9.Models.Product>
+
+<h2>Список продуктів</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+        </tr>
+    }
+</table>
+
+<a href="/Home/Weather">Переглянути Погоду</a>
